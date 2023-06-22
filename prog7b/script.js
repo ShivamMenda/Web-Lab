@@ -10,12 +10,16 @@ function validateForm() {
       alert("Please enter your name");
       return;
     }
-    if (email === "") {
+    if (email === "" ) {
       alert("Please enter your email");
       return;
     }
-    if (mobile === "") {
-      alert("Please enter your mobile number");
+    if(!email.includes(".") || !email.includes("@")){
+      alert("Enter correctly");
+      return;
+    }
+    if (mobile === "" || mobile.length!==10) {
+      alert("Please enter your mobile number correctly");
       return;
     }
     if (gender === "") {
