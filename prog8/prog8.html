@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>XHTML form</title>
+        <style>
+            #f{
+                width:100%;
+                height: 300px;
+                border:1px solid;
+                display:block;
+                
+            }
+            ul{
+              list-style:none;
+            }
+            h2{
+              text-align:center;
+            }
+            li{
+              height:30px;
+              line-height:30px;
+            }
+        </style>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div>
+            <h2>XHTML Form</h2>
+        </div>
+        <div id="f">
+            <form>
+                <ul align="center">
+                    <li>
+                      <label for="regno">Register Number (USN)</label>
+                      <input type="text" id="regno" required="required" />
+                    </li>
+                    <li>
+                      <label for="subcode">Subject Code</label>
+                      <input type="text" id="subcode" required="required" />
+                    </li>
+                    <li>
+                      <label for="marks-1">Test 1 Marks</label>
+                      <input type="text" id="marks-1" required="required" />
+                    </li>
+                    <li>
+                      <label for="marks-2">Test 2 Marks</label>
+                      <input type="text" id="marks-2" required="required" />
+                    </li>
+                    <li>
+                      <label for="marks-3">Test 3 Marks</label>
+                      <input type="text" id="marks-3" required="required" />
+                    </li>
+                  </ul>
+                  <div align="center">
+                    <button type="submit" class="btn" onclick="validateFormAndCalc()">Submit</button>
+                  </div>
+            </form>
+        </div>
+        <div> <p id="res" align ="center"></p></div>
+    </body>
+
+</html>
