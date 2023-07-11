@@ -1,27 +1,26 @@
 function validateFormAndCalc() {
     var usn=document.getElementById("regno").value;
     var code=document.getElementById("subcode").value;
-    let m1=parseInt(document.getElementById("marks-1").value);
-    let m2=parseInt(document.getElementById("marks-2").value);
-    let m3=parseInt(document.getElementById("marks-3").value);
+    var m1=parseInt(document.getElementById("marks-1").value);
+    var m2=parseInt(document.getElementById("marks-2").value);
+    var m3=parseInt(document.getElementById("marks-3").value);
 
-    if(m1 || m2 || m3 >20){
+    if(m1 >20|| m2>20 || m3 >20){
         alert("Enter valid marks");
+        return;
     }
 
-    marks=[m1,m2,m3]
-    marks.sort();
-    console.log(marks);
-    let avg=(marks[1]+marks[2])/2;
 
     var information =
       "USN: " + usn + "\n" +
       "Subject Code: " + code + "\n" +
       "Marks 1: " + m1 + "\n" +
       "Marks 2: " + m2 + "\n" +
-      "Marks 3: " + m3;
-    document.getElementById("res").innerHTML=information;
+      "Marks 3: " + m3 +"\n" ;
     console.log(information);
-    console.log(avg);
+    marks=[m1,m2,m3]
+    marks.sort();
+    var avg=(marks[1]+marks[2])/2;
     alert(`The average is ${avg}`);
+    alert(`${information}`)
 }
