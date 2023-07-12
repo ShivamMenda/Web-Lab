@@ -17,10 +17,10 @@
   <script>
     function validateForm() {
       // Get form values
-      var userId = document.forms["registrationForm"]["userId"].value;
-      var name = document.forms["registrationForm"]["name"].value;
-      var password = document.forms["registrationForm"]["password"].value;
-      var email = document.forms["registrationForm"]["email"].value;
+      var userId = document.getElementById("userId").value;
+      var name = document.getElementById("name").value;
+      var password = document.getElementById("password").value;
+      var email = document.getElementById("email").value;
       
       // User ID validation
       if (userId.length < 5 || userId.length > 12) {
