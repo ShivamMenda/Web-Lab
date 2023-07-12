@@ -3,14 +3,12 @@ body{
     font-family: sans-serif;
 }
 nav{
+    height: 50px;
     background: #34495e;
     display: flex;
     padding: 5px 20px;
     align-items: center;
-    justify-content: space-between;
-}
-img{
-    height: 50px;
+    justify-content: space-evenly;
 }
 nav a{
     color: #fff;
@@ -27,12 +25,10 @@ nav a{
     font-size: 30px;
     margin-left: 100px;
 }
-#about p{
-    
+#about p{   
    text-align: center;
 }
 #about button{
-    
     background-color: #e35f13;
     border: none;
     padding: 15px;
@@ -51,7 +47,7 @@ footer{
     padding: 10px;
 }
 .container{
-    display: flex;
+    display: block;
     justify-content: space-evenly;
 }
 #links a{
