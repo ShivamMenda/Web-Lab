@@ -39,5 +39,5 @@ function validateForm() {
       "Gender: " + gender + "\n" +
       "Favorite Color: " + color;
 
-    document.getElementById("result").value = information;
+     alert(`${information}`);
   }
