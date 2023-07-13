@@ -4,7 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <style>
+        body {
+          font-family: sans-serif;
+        }
+
+        main {
+          display: flex;
+          justify-content: space-evenly;
+        }
+
+        #sec-1 {
+          width: 50%;
+        }
+
+        #sec-2 {
+          width: 25%;
+        }
+
+
+        .skill-list, .lang-list {
+          list-style: none;
+        }
+
+        .skill-list li, .lang-list li {
+          display: inline-block;
+          border: solid 1px black;
+          background-color: whitesmoke;
+          margin: 5px;
+          padding: 10px;
+          text-align: center;
+          border-radius: 8px;
+        }
+
+    </style>
     <title>Resume</title>
   </head>
   <body>
@@ -20,14 +53,14 @@
           <h3>Education</h3>
           <div>
             <h4>Sri Jayachamrajendra Engineering College (SJCE), Mysuru</h4>
-            <p class="degree">B.E in Computer Science</p>
+            <i><p>B.E in Computer Science</p></i>
             <p>Expected year of Graduation - 2024</p>
             <p>Currently Pursuing</p>
             <p>Current CGPA - 8.7 / 10</p>
           </div>
           <div>
             <h4>Excel Public School Mysuru</h4>
-            <p class="degree">12th</p>
+            <i><p>12th</p></i>
             <p>Passed 12th in 2020</p>
             <p>Board - CBSE</p>
             <p>Score - 89%</p>
